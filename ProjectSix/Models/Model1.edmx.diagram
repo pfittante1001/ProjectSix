@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="90cc5205aa084369b7cee498eff27208" Name="Diagram1">
+        <EntityTypeShape EntityType="WardrobeMVCModel.Accessory" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.AsscType" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Bottom" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.BottomType" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Outfit" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Shoe" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.ShoeType" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Top" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.TopType" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Table_3" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Accessory_AsscType" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfit_Accessory" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Bottoms_BottomType" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfit_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfit_Shoe" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfit_Top" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Shoe_ShoeType" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Top_TopType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
