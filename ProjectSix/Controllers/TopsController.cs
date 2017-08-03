@@ -52,6 +52,39 @@ namespace ProjectSix.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (top.TopTypesID.Equals(2))
+                {
+                    top.Photo = "/images/staffordCrewneck.jpg";
+                }
+                if (top.TopTypesID.Equals(3))
+                {
+                    top.Photo = "/images/staffordVneck.jpg";
+                }
+                if (top.TopTypesID.Equals(4))
+                {
+                    top.Photo = "/images/perryEllisPasleyBlue.jpeg";
+                }
+                if (top.TopTypesID.Equals(5))
+                {
+                    top.Photo = "/images/perryEllisPasleyBrown.jpeg";
+                }
+                if (top.TopTypesID.Equals(6))
+                {
+                    top.Photo = "/images/trueReligionTshirt.jpg";
+                }
+                if (top.TopTypesID.Equals(7))
+                {
+                    top.Photo = "/images/perryEllisPasley.jpeg";
+                }
+                if (top.TopTypesID.Equals(8))
+                {
+                    top.Photo = "/images/sleevlessTshirt.jpg";
+                }
+                if (top.TopTypesID.Equals(9))
+                {
+                    top.Photo = "/images/harley.jpg";
+                }
+
                 db.Tops.Add(top);
                 db.SaveChanges();
                 return RedirectToAction("Index");

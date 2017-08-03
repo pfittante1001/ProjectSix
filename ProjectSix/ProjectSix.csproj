@@ -252,6 +252,22 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="images\belt.jpg" />
+    <Content Include="images\Corona.jpg" />
+    <Content Include="images\dickies.jpg" />
+    <Content Include="images\harley.jpg" />
+    <Content Include="images\harleyBoots.JPG" />
+    <Content Include="images\Hat.jpg" />
+    <Content Include="images\jeans.jpg" />
+    <Content Include="images\perryEllisPasley.jpeg" />
+    <Content Include="images\perryEllisPasleyBlue.jpeg" />
+    <Content Include="images\perryEllisPasleyBrown.jpeg" />
+    <Content Include="images\sleevlessTshirt.jpg" />
+    <Content Include="images\staffordCrewneck.jpg" />
+    <Content Include="images\staffordVneck.jpg" />
+    <Content Include="images\trueRelligonJeans.jpg" />
+    <Content Include="images\trueRelligonTshirt.jpg" />
+    <Content Include="images\watch.jpg" />
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>

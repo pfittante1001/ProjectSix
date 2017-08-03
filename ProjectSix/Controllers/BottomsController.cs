@@ -52,6 +52,18 @@ namespace ProjectSix.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (bottom.BottomTypesID.Equals(2))
+                {
+                    bottom.Photo = "/images/dickies.jpg";
+                }
+                if (bottom.BottomTypesID.Equals(4))
+                {
+                    bottom.Photo = "/images/trueRelligonJeans.jpg";
+                }
+                if (bottom.BottomTypesID.Equals(5))
+                {
+                    bottom.Photo = "/images/jeans.jpg";
+                }
                 db.Bottoms.Add(bottom);
                 db.SaveChanges();
                 return RedirectToAction("Index");

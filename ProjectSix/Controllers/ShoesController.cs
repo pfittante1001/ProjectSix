@@ -52,6 +52,14 @@ namespace ProjectSix.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (shoe.ShoeTypeID.Equals(1))
+                {
+                    shoe.Photo = "/images/harleyBoots.jpg";
+                }
+                if (shoe.ShoeTypeID.Equals(2))
+                {
+                    shoe.Photo = "/images/Corona.jpg";
+                }
                 db.Shoes.Add(shoe);
                 db.SaveChanges();
                 return RedirectToAction("Index");

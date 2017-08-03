@@ -52,6 +52,18 @@ namespace ProjectSix.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (accessory.AsscTypesID.Equals(1))
+                {
+                    accessory.Photo = "/images/belt.jpg";
+                }
+                if (accessory.AsscTypesID.Equals(2))
+                {
+                    accessory.Photo = "/images/Hat.jpg";
+                }
+                if (accessory.AsscTypesID.Equals(3))
+                {
+                    accessory.Photo = "/images/watch.jpg";
+                }
                 db.Accessories.Add(accessory);
                 db.SaveChanges();
                 return RedirectToAction("Index");
