@@ -1,31 +1,214 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<html>
+<head>
+<style media="screen">
+    section.row.container {
+        width: 210px;
+        height: 140px;
+        position: relative;
+        margin-left:200px;
+        margin-top:50px;
+        -webkit-perspective: 1100px;
+        -moz-perspective: 1100px;
+        -o-perspective: 1100px;
+        perspective: 1100px;
+    }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    #carousel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-transform: translateZ( -288px );
+        -moz-transform: translateZ( -288px );
+        -o-transform: translateZ( -288px );
+        transform: translateZ( -288px );
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform 1s;
+        -moz-transition: -moz-transform 1s;
+        -o-transition: -o-transform 1s;
+        transition: transform 1s;
+    }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+        #carousel figure {
+            display: block;
+            position: absolute;
+            width: 186px;
+            height: 116px;
+            left: 10px;
+            top: 10px;
+            line-height: 116px;
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+            #carousel figure:nth-child(1) {
+                background: hsla( 0, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(2) {
+                background: hsla( 40, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(3) {
+                background: hsla( 80, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(4) {
+                background: hsla( 120, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(5) {
+                background: hsla( 160, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(6) {
+                background: hsla( 200, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(7) {
+                background: hsla( 240, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(8) {
+                background: hsla( 280, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(9) {
+                background: hsla( 320, 100%, 50%, 0.8 );
+            }
+
+            #carousel figure:nth-child(1) {
+                -webkit-transform: rotateY( 0deg ) translateZ( 288px );
+                -moz-transform: rotateY( 0deg ) translateZ( 288px );
+                -o-transform: rotateY( 0deg ) translateZ( 288px );
+                transform: rotateY( 0deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(2) {
+                -webkit-transform: rotateY( 40deg ) translateZ( 288px );
+                -moz-transform: rotateY( 40deg ) translateZ( 288px );
+                -o-transform: rotateY( 40deg ) translateZ( 288px );
+                transform: rotateY( 40deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(3) {
+                -webkit-transform: rotateY( 80deg ) translateZ( 288px );
+                -moz-transform: rotateY( 80deg ) translateZ( 288px );
+                -o-transform: rotateY( 80deg ) translateZ( 288px );
+                transform: rotateY( 80deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(4) {
+                -webkit-transform: rotateY( 120deg ) translateZ( 288px );
+                -moz-transform: rotateY( 120deg ) translateZ( 288px );
+                -o-transform: rotateY( 120deg ) translateZ( 288px );
+                transform: rotateY( 120deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(5) {
+                -webkit-transform: rotateY( 160deg ) translateZ( 288px );
+                -moz-transform: rotateY( 160deg ) translateZ( 288px );
+                -o-transform: rotateY( 160deg ) translateZ( 288px );
+                transform: rotateY( 160deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(6) {
+                -webkit-transform: rotateY( 200deg ) translateZ( 288px );
+                -moz-transform: rotateY( 200deg ) translateZ( 288px );
+                -o-transform: rotateY( 200deg ) translateZ( 288px );
+                transform: rotateY( 200deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(7) {
+                -webkit-transform: rotateY( 240deg ) translateZ( 288px );
+                -moz-transform: rotateY( 240deg ) translateZ( 288px );
+                -o-transform: rotateY( 240deg ) translateZ( 288px );
+                transform: rotateY( 240deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(8) {
+                -webkit-transform: rotateY( 280deg ) translateZ( 288px );
+                -moz-transform: rotateY( 280deg ) translateZ( 288px );
+                -o-transform: rotateY( 280deg ) translateZ( 288px );
+                transform: rotateY( 280deg ) translateZ( 288px );
+            }
+
+            #carousel figure:nth-child(9) {
+                -webkit-transform: rotateY( 320deg ) translateZ( 288px );
+                -moz-transform: rotateY( 320deg ) translateZ( 288px );
+                -o-transform: rotateY( 320deg ) translateZ( 288px );
+                transform: rotateY( 320deg ) translateZ( 288px );
+            }
+</style>
+
+</head>
+<body>
+
+    <section class="row container">
+        <div id="carousel">
+            <figure><img src="~/images/harley.jpg" /></figure>
+            <figure><img src="~/images/rsz_harleyboots.jpg" /></figure>
+            <figure><img src="~/images/rsz_hat.jpg" /></figure>
+            <figure><img src="~/images/rsz_perryellispasleyblue.jpg"/></figure>
+            <figure><img src="~/images/rsz_staffordcrewneck.jpg" /></figure>
+            <figure><img src="~/images/rsz_truerelligonjeans.jpg" /></figure>
+            <figure><img src="~/images/rsz_watch.jpg" /></figure>
+            <figure><img src="~/images/rsz_sleevlesstshirt.jpg" /></figure>
+            <figure><img src="~/images/rsz_truerelligontshirt.jpg" /></figure>
+        </div>
+    </section>
+
+    <section id="options">
+        <p id="navigation">
+            <button id="previous" data-increment="-1">Previous</button>
+            <button id="next" data-increment="1">Next</button>
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+    </section>
+
+    <script src="../js/utils.js"></script>
+    <script>
+    var init = function() {
+      var carousel = document.getElementById('carousel'),
+          navButtons = document.querySelectorAll('#navigation button'),
+          panelCount = carousel.children.length,
+          transformProp = Modernizr.prefixed('transform'),
+          theta = 0,
+
+          onNavButtonClick = function( event ){
+            var increment = parseInt( event.target.getAttribute('data-increment') );
+            theta += ( 360 / panelCount ) * increment * -1;
+            carousel.style[ transformProp ] = 'translateZ( -288px ) rotateY(' + theta + 'deg)';
+          };
+
+      for (var i=0; i < 2; i++) {
+        navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+      }
+
+    };
+
+    window.addEventListener( 'DOMContentLoaded', init, false);
+    </script>
+
+
+    <p id="disclaimer">Sorry, your browser does not support CSS 3D transforms. This example may be broken.</p>
+
+    <footer>
+        <p><a href="../">Intro to CSS 3D transforms</a> by David DeSandro</p>
+        <p>
+            Article content licensed <a href="http://creativecommons.org/licenses/by/2.0/">CC-BY</a>.
+            All example code licensed <a href="http://desandro.mit-license.org/">MIT</a>.
+        </p>
+        <p><a href="https://github.com/desandro/3dtransforms/issues/">Help improve these docs. Open an issue or pull request.</a></p>
+    </footer>
+
+
+</body>
+</html>
