@@ -54,15 +54,15 @@ namespace ProjectSix.Controllers
             {
                 if (accessory.AsscTypesID.Equals(1))
                 {
-                    accessory.Photo = "/images/belt.jpg";
+                    accessory.Photo = "/images/rsz_belt.jpg";
                 }
                 if (accessory.AsscTypesID.Equals(2))
                 {
-                    accessory.Photo = "/images/Hat.jpg";
+                    accessory.Photo = "/images/rsz_hat.jpg";
                 }
                 if (accessory.AsscTypesID.Equals(3))
                 {
-                    accessory.Photo = "/images/watch.jpg";
+                    accessory.Photo = "/images/rsz_watch.jpg";
                 }
                 db.Accessories.Add(accessory);
                 db.SaveChanges();

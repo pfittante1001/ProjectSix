@@ -29,16 +29,95 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.Top.Name)
+
+            @{
+                if (item.Top.TopTypesID.Equals(2))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+                if (item.Top.TopTypesID.Equals(3))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+                if (item.Top.TopTypesID.Equals(4))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+                if (item.Top.TopTypesID.Equals(5))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+                if (item.Top.TopTypesID.Equals(6))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+                if (item.Top.TopTypesID.Equals(7))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+                if (item.Top.TopTypesID.Equals(8))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+                if (item.Top.TopTypesID.Equals(9))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">
+                }
+
+            }
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Accessory.Name)
+
+            @{
+                if (item.Accessory.AsscTypesID.Equals(1))
+                {
+                   <img src="@Html.DisplayFor(modelItem => item.Accessory.Photo)">
+                }
+                if (item.Accessory.AsscTypesID.Equals(2))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Accessory.Photo)">
+                }
+                if (item.Accessory.AsscTypesID.Equals(3))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Accessory.Photo)">
+                }
+            }
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Bottom.Name)
+            @{
+                if (item.Bottom.BottomTypesID.Equals(2))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Bottom.Photo)">
+                }
+                if (item.Bottom.BottomTypesID.Equals(4))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Bottom.Photo)">
+                }
+                if (item.Bottom.BottomTypesID.Equals(5))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Bottom.Photo)">
+                }
+            }
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Shoe.Name)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Top.Name)
+            @{
+                if (item.Shoe.ShoeTypeID.Equals(1))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Shoe.Photo)">
+                }
+                if (item.Shoe.ShoeTypeID.Equals(2))
+                {
+                    <img src="@Html.DisplayFor(modelItem => item.Shoe.Photo)">
+                }
+            }
+
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |

@@ -54,11 +54,11 @@ namespace ProjectSix.Controllers
             {
                 if (shoe.ShoeTypeID.Equals(1))
                 {
-                    shoe.Photo = "/images/harleyBoots.jpg";
+                    shoe.Photo = "/images/rsz_harleyBoots.jpg";
                 }
                 if (shoe.ShoeTypeID.Equals(2))
                 {
-                    shoe.Photo = "/images/Corona.jpg";
+                    shoe.Photo = "/images/rsz_corona.jpg";
                 }
                 db.Shoes.Add(shoe);
                 db.SaveChanges();

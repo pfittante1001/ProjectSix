@@ -252,22 +252,22 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="images\belt.jpg" />
-    <Content Include="images\Corona.jpg" />
-    <Content Include="images\dickies.jpg" />
     <Content Include="images\harley.jpg" />
-    <Content Include="images\harleyBoots.JPG" />
-    <Content Include="images\Hat.jpg" />
-    <Content Include="images\jeans.jpg" />
-    <Content Include="images\perryEllisPasley.jpeg" />
-    <Content Include="images\perryEllisPasleyBlue.jpeg" />
-    <Content Include="images\perryEllisPasleyBrown.jpeg" />
-    <Content Include="images\sleevlessTshirt.jpg" />
-    <Content Include="images\staffordCrewneck.jpg" />
-    <Content Include="images\staffordVneck.jpg" />
-    <Content Include="images\trueRelligonJeans.jpg" />
-    <Content Include="images\trueRelligonTshirt.jpg" />
-    <Content Include="images\watch.jpg" />
+    <Content Include="images\rsz_belt.jpg" />
+    <Content Include="images\rsz_corona.jpg" />
+    <Content Include="images\rsz_dickies.jpg" />
+    <Content Include="images\rsz_harleyboots.jpg" />
+    <Content Include="images\rsz_hat.jpg" />
+    <Content Include="images\rsz_jeans.jpg" />
+    <Content Include="images\rsz_perryellispasley.jpg" />
+    <Content Include="images\rsz_perryellispasleyblue.jpg" />
+    <Content Include="images\rsz_perryellispasleybrown.jpg" />
+    <Content Include="images\rsz_sleevlesstshirt.jpg" />
+    <Content Include="images\rsz_staffordcrewneck.jpg" />
+    <Content Include="images\rsz_staffordvneck.jpg" />
+    <Content Include="images\rsz_truerelligonjeans.jpg" />
+    <Content Include="images\rsz_truerelligontshirt.jpg" />
+    <Content Include="images\rsz_watch.jpg" />
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>

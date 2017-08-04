@@ -54,31 +54,31 @@ namespace ProjectSix.Controllers
             {
                 if (top.TopTypesID.Equals(2))
                 {
-                    top.Photo = "/images/staffordCrewneck.jpg";
+                    top.Photo = "/images/rsz_staffordcrewneck.jpg";
                 }
                 if (top.TopTypesID.Equals(3))
                 {
-                    top.Photo = "/images/staffordVneck.jpg";
+                    top.Photo = "/images/rsz_staffordvneck.jpg";
                 }
                 if (top.TopTypesID.Equals(4))
                 {
-                    top.Photo = "/images/perryEllisPasleyBlue.jpeg";
+                    top.Photo = "/images/rsz_perryellispasleyblue.jpg";
                 }
                 if (top.TopTypesID.Equals(5))
                 {
-                    top.Photo = "/images/perryEllisPasleyBrown.jpeg";
+                    top.Photo = "/images/rsz_perryellispasleybrown.jpg";
                 }
                 if (top.TopTypesID.Equals(6))
                 {
-                    top.Photo = "/images/trueReligionTshirt.jpg";
+                    top.Photo = "/images/rsz_truereligiontshirt.jpg";
                 }
                 if (top.TopTypesID.Equals(7))
                 {
-                    top.Photo = "/images/perryEllisPasley.jpeg";
+                    top.Photo = "/images/rsz_perryellispasley.jpg";
                 }
                 if (top.TopTypesID.Equals(8))
                 {
-                    top.Photo = "/images/sleevlessTshirt.jpg";
+                    top.Photo = "/images/rsz_sleevlesstshirt.jpg";
                 }
                 if (top.TopTypesID.Equals(9))
                 {

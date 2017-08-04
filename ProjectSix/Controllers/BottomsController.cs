@@ -54,15 +54,15 @@ namespace ProjectSix.Controllers
             {
                 if (bottom.BottomTypesID.Equals(2))
                 {
-                    bottom.Photo = "/images/dickies.jpg";
+                    bottom.Photo = "/images/rsz_dickies.jpg";
                 }
                 if (bottom.BottomTypesID.Equals(4))
                 {
-                    bottom.Photo = "/images/trueRelligonJeans.jpg";
+                    bottom.Photo = "/images/rsz_truerelligonjeans.jpg";
                 }
                 if (bottom.BottomTypesID.Equals(5))
                 {
-                    bottom.Photo = "/images/jeans.jpg";
+                    bottom.Photo = "/images/rsz_jeans.jpg";
                 }
                 db.Bottoms.Add(bottom);
                 db.SaveChanges();
