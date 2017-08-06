@@ -6,61 +6,45 @@
 
 <h2>Details</h2>
 
-<div>
-    <h4>Shoe</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
-
-        <dd>
-           <img src="@Html.DisplayFor(model => model.Photo)">
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occassion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occassion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoeType.ShoesTypeName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoeType.ShoesTypeName)
-        </dd>
-
-    </dl>
+<div class="row container" id="titleoutfitpart">
+    <div class="col-md-12" id="titleoutfitcolumn">
+        <h2>Here are the details for the item you selected</h2>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoesID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<div class="row container" id="detailsrow">
+    <div class="col-md-6" id="detailsCol1">
+        <img src="@Html.DisplayFor(model => model.Photo)">
+    </div>
+    <div class="col-md-6" id="detailsCol2">
+        <div class="row container" id="detailscol2row1">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Name: </span>@Html.DisplayFor(model => model.Name)<span>.</span></h2>
+            </div>
+        </div>
+        <div class="row container" id="detailscol2row2">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Color: </span> @Html.DisplayFor(model => model.Color)</h2>
+            </div>
+        </div>
+        <div class="row container" id="detailscol2row3">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Season: </span> <span>You can wear this item in </span>@Html.DisplayFor(model => model.Season)<span> seasons.</span></h2>
+            </div>
+        </div>
+        <div class="row container" id="detailscol2row4">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Occassion: </span> <span>You can wear this item in </span>@Html.DisplayFor(model => model.Season)<span> occassions.</span></h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row container" id="navigatedetails">
+    <div class="col-md-6" id="navdetbtn">
+        <a class="btn btn-default" target="_blank" id="navdettbtn" href=https://www.google.com/search?q =stafford+v+neck+t+shirts&source =lnms&tbm =shop&sa =X&ved =0ahUKEwjhjL6r5MLVAhVH5CYKHU-7Bd8Q_AUICigB&biw =1366&bih =638'>Buy Item Now!</a>
+    </div>
+    <div class="col-md-6" id="navdettbtn">
+        <a class="btn btn-default" id="navdetbtn" href='@Url.Action("HarleyBtsPart", "Outfits")'>Return To Outfits</a>
+    </div>
+</div>
+
