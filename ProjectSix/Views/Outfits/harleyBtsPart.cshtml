@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ProjectSix.Models.Outfit>
+
+<div class="row container" id="titleoutfitpart">
+    <div class="col-md-12" id="titleoutfitcolumn">
+        <h2>Here are some of my outit recommendations for the item you chose</h2>
+    </div>
+</div>
+
+
+@foreach (var item in Model)
+{
+    if (item.Shoe.ShoeTypeID == 1)
+    {
+        <div class="row container" id="outfitpart">
+            <div class="col-md-3" id="oufitcolumn">
+                <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">>
+            </div>
+            <div class="col-md-3" id="oufitcolumn">
+                <img src="@Html.DisplayFor(modelItem => item.Accessory.Photo)">
+            </div>
+            <div class="col-md-3" id="oufitcolumn">
+                <img src="@Html.DisplayFor(modelItem => item.Shoe.Photo)">
+            </div>
+            <div class="col-md-3" id="oufitcolumn">
+                <img src="@Html.DisplayFor(modelItem => item.Bottom.Photo)">
+            </div>
+        </div>
+    }
+}
+<div class="row container" id="navigatepart">
+    <div class="col-md-3" id="navpartbtn">
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Accessories")'>Add Accessories</a>
+    </div>
+    <div class="col-md-3" id="navpartbtn" >
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Tops")'>Add A Top</a>
+    </div>
+    <div class="col-md-3" id="navpartbtn">
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Bottoms")'>Add A Bottom</a>
+    </div>
+    <div class="col-md-3"id="navpartbtn" >
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Shoes")'>Add Shoes</a>
+    </div>
+
+</div>

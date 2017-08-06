@@ -1,4 +1,25 @@
-﻿div#createRow.row.container{
+﻿div#titleoutfitpart.row.container{
+    text-align:center;
+    background-image: url('../images/flames.jpg');
+    margin-top:5px;
+    color:#ffffff;
+}
+h1{
+    color:#ffffff;
+}
+a#returnoutfits.btn.btn-default{
+    opacity:.6;
+    border:none;
+    padding-left:0px;
+    padding-right:0px;
+    padding-bottom:0px;
+    padding-top:0px;
+   
+}
+div#navigatepart.row.container{
+    padding-left:180px;
+}
+div#createRow.row.container{
     margin-top:5px;
     font-family: 'Permanent Marker', cursive;
     background-color:slategray;
@@ -8,15 +29,43 @@ div#createRowvideo.row.container{
     width:630px;
     margin-left:300px;
 }
+div#outfitpart.row.container{
+    margin-top:5px;
+    margin-bottom:10px;
+    border-color: #000000;
+    border-style: groove;
+    border-width: 3px;
+    width: 860px;
+    margin-left: 165px;
+    background-image: url('../images/flames.jpg');
+}
 body{
     background-color:slategray;
 }
-
+div#outfitimg.row.container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-color: #000000;
+    border-style: groove;
+    border-width: 3px;
+    width: 860px;
+    margin-left: 165px;
+    background-image: url('../images/flames.jpg');
+}
+div#outfitimg.col-md-3{
+    width:200px;
+    border-color: #000000;
+    border-right:groove;
+    border-width: 3px;
+   
+}
 div.carosel.row.container{
     width:1120px;
     margin:auto;
     margin-top:5px;
 }
+
+
 div#myCarousel.carousel.slide{
     width:1140px;
     height:232px;
@@ -39,8 +88,6 @@ h2#welcomeTitle{
     margin: 0 auto;
 }
 
-
-
 a#return.btn.btn-default{
     font-family: 'Permanent Marker', cursive;
     margin-left: 500px;
@@ -49,9 +96,26 @@ a#return.btn.btn-default{
     height:35px;
 
 }
+div#navpartbtn.col-md-3{
+    font-family: 'Permanent Marker', cursive;
+    
+    height:35px;
+
+}
 .nav a{
         font-family: 'Permanent Marker', cursive;
 }
 .navbar-brand{
             font-family: 'Permanent Marker', cursive;
+}
+div#outfitswelcome.row.container {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    border-color: #000000;
+    border-style: groove;
+    border-width: 3px;
+    height: 96px;
+    background-image: url('../images/flames.jpg');
+    margin-top:5px
+    
 }

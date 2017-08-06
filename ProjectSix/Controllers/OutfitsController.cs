@@ -20,6 +20,11 @@ namespace ProjectSix.Controllers
             var outfits = db.Outfits.Include(o => o.Accessory).Include(o => o.Bottom).Include(o => o.Shoe).Include(o => o.Top);
             return View(outfits.ToList());
         }
+        public ActionResult HarleyBtsPart()
+        {
+            var outfits = db.Outfits.Include(o => o.Accessory).Include(o => o.Bottom).Include(o => o.Shoe).Include(o => o.Top);
+            return View(outfits.ToList());
+        }
 
         // GET: Outfits/Details/5
         public ActionResult Details(int? id)
