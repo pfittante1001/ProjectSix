@@ -372,6 +372,7 @@
     <Content Include="Views\Outfits\PerryPart.cshtml" />
     <Content Include="Views\Outfits\StaffordPart.cshtml" />
     <Content Include="Views\Outfits\ReligonPart.cshtml" />
+    <Content Include="Views\Outfits\SleevlessPart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
