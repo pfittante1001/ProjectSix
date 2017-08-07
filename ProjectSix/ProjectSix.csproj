@@ -373,6 +373,7 @@
     <Content Include="Views\Outfits\StaffordPart.cshtml" />
     <Content Include="Views\Outfits\ReligonPart.cshtml" />
     <Content Include="Views\Outfits\SleevlessPart.cshtml" />
+    <Content Include="Views\readme.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
