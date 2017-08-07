@@ -15,6 +15,17 @@ div#navigatedetails.row.container{
     font-family: 'Permanent Marker', cursive;
 
 }
+input{
+    
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 190px;
+    padding-bottom: 10px;
+    font-family: 'Permanent Marker', cursive;
+
+
+
+}
 h1{
     color:#ffffff;
 }
@@ -135,13 +146,33 @@ div#detailsCol2.col-md-6{
 
 }
 div#detailsCol2.col-md-3{
-    width:800px;
+    width:1100px;
     height:40px;
 }
 div#navpartbtn.col-md-3{
     font-family: 'Permanent Marker', cursive;
-    
+   
     height:35px;
+
+}
+
+div#navpartbtn1.col-md-3{
+    font-family: 'Permanent Marker', cursive;
+   padding-left:75px;
+    height:35px;
+
+}
+div#navpartbtn2.col-md-3{
+    font-family: 'Permanent Marker', cursive;
+   padding-left:25px;
+    height:25px;
+
+}
+div#navpartbtn3.col-md-3{
+    font-family: 'Permanent Marker', cursive;
+   padding-left:0px;
+    height:25px;
+    width:195px;
 
 }
 .nav a{

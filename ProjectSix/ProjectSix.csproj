@@ -366,6 +366,10 @@
     <Content Include="Views\TopTypes\Edit.cshtml" />
     <Content Include="Views\TopTypes\Index.cshtml" />
     <Content Include="Views\Outfits\HarleyBtsPart.cshtml" />
+    <Content Include="Views\Outfits\CoronaPart.cshtml" />
+    <Content Include="Views\Outfits\HarleyshtsPart.cshtml" />
+    <Content Include="Views\Outfits\LeviPart.cshtml" />
+    <Content Include="Views\Outfits\PerryPart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

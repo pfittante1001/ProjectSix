@@ -9,7 +9,7 @@
     <script>
         function OnClick1() {
             
-              window.location.href = "@Url.Action("Details", "Tops", new { id = 16 })";
+              window.location.href = "@Url.Action("Details", "Tops", new { id = 19 })";
         };
     </script>
     <script>
@@ -39,7 +39,7 @@
     <script>
         function OnClick6() {
 
-            window.location.href = "@Url.Action("Details", "Bottoms", new { id = 6 })";
+            window.location.href = "@Url.Action("Details", "Bottoms", new { id = 8 })";
         };
     </script>
     <script>
@@ -52,19 +52,16 @@
 </head>
 @foreach (var item in Model)
 {
-    if (item.Shoe.ShoeTypeID.Equals(1))
+    if (item.Shoe.ShoeTypeID.Equals(2))
     {    
         <div class="row container" id="outfitpart">
             <div class="col-md-3" id="oufitcolumn">              
                 <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">  
-                @if (item.TopsID.Equals(16))
+                @if (item.TopsID.Equals(19))
                 {
                     <input type="button" value="View Item Details" onclick="OnClick1()">
                 }
-                else
-                {
-                    <input type="button" value="View Item Details" onclick="OnClick2()">
-                }
+               
 
             </div>
             <div class="col-md-3" id="oufitcolumn">
@@ -88,32 +85,27 @@
             </div>
             <div class="col-md-3" id="oufitcolumn">
                 <img src="@Html.DisplayFor(modelItem => item.Bottom.Photo)" width="190" height="232">
-                @if (item.BottomsID.Equals(6))
+                @if (item.BottomsID.Equals(8))
                 {
                     <input type="button" value="View Item Details" onclick="OnClick6()">
                 }
-                 else 
-                {
-                    <input type="button" value="View Item Details" onclick="OnClick7()">
-
-                }
+                 
             </div>
         </div>
         }   
 }
 
-
 <div class="row container" id="navigatepart">
     <div class="col-md-3" id="navpartbtn1">
         <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Tops")'>Add Top</a>
     </div>
-    <div class="col-md-3" id="navpartbtn2">
+    <div class="col-md-3" id="navpartbtn2" >
         <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Accessories")'>Add A Accessories</a>
     </div>
     <div class="col-md-3" id="navpartbtn3">
         <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Shoes")'>Add A Shoes</a>
     </div>
-    <div class="col-md-3" id="navpartbtn4">
+    <div class="col-md-3"id="navpartbtn4" >
         <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Bottoms")'>Add Bottoms</a>
     </div>
 
