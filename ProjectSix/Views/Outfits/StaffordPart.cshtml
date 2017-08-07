@@ -1,0 +1,162 @@
+﻿@model IEnumerable<ProjectSix.Models.Outfit>
+
+<div class="row container" id="titleoutfitpart">
+    <div class="col-md-12" id="titleoutfitcolumn">
+        <h2>Here are some of my outit recommendations for the item you selected</h2>
+    </div>
+</div>
+<head>
+    <script>
+        function OnClick1() {
+            
+              window.location.href = "@Url.Action("Details", "Tops", new { id = 16 })";
+        };
+    </script>
+    <script>
+        function OnClick2() {
+
+            window.location.href = "@Url.Action("Details", "Tops", new { id = 17 })";
+        };
+    </script>
+    <script>
+        function OnClick3() {
+
+            window.location.href = "@Url.Action("Details", "Tops", new { id = 23 })";
+        };
+    </script>
+    <script>
+        function OnClick4() {
+
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 7 })";
+        };
+    </script>
+    <script>
+        function OnClick5() {
+
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 8 })";
+        };
+    </script>
+    <script>
+        function OnClick6() {
+
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 6 })";
+        };
+    </script>
+    <script>
+        function OnClick7() {
+
+            window.location.href = "@Url.Action("Details", "Bottoms", new { id = 6 })";
+        };
+    </script>
+    <script>
+        function OnClick8() {
+
+            window.location.href = "@Url.Action("Details", "Bottoms", new { id = 7 })";
+        };
+    </script>
+    <script>
+        function OnClick9() {
+
+            window.location.href = "@Url.Action("Details", "Bottoms", new { id = 8 })";
+        };
+    </script>
+    <script>
+        function OnClick10() {
+
+            window.location.href = "@Url.Action("Details", "Shoes", new { id = 3 })";
+        };
+    </script>
+    <script>
+        function OnClick11() {
+
+            window.location.href = "@Url.Action("Details", "Shoes", new { id = 4 })";
+        };
+    </script>
+    
+    
+</head>
+@foreach (var item in Model)
+{
+    if (item.Top.TopType.TopTypesID.Equals(2) || item.Top.TopType.TopTypesID.Equals(3) )
+    {
+        <div class="row container" id="outfitpart">
+            <div class="col-md-3" id="oufitcolumn">              
+                <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">  
+                @if (item.TopsID.Equals(16))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick1()">
+                }
+                @if (item.TopsID.Equals(17))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick2()">
+                }
+                @if (item.TopsID.Equals(23))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick3()">
+                }
+               
+
+            </div>
+            <div class="col-md-3" id="oufitcolumn">
+                <img src="@Html.DisplayFor(modelItem => item.Accessory.Photo)">
+                @if (item.AccessorysID.Equals(7))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick4()">
+                }
+                @if (item.AccessorysID.Equals(8))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick5()">
+                }
+                @if (item.AccessorysID.Equals(6))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick6()">
+                }
+            </div>
+            <div class="col-md-3" id="oufitcolumn">
+                <img src="@Html.DisplayFor(modelItem => item.Shoe.Photo)">
+                @if (item.ShoesID.Equals(3))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick10()">
+                }
+                @if (item.ShoesID.Equals(4))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick11()">
+
+                }
+            </div>
+            <div class="col-md-3" id="oufitcolumn">
+                <img src="@Html.DisplayFor(modelItem => item.Bottom.Photo)" width="190" height="232">
+                @if (item.BottomsID.Equals(6))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick7()">
+                }
+                @if (item.BottomsID.Equals(7))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick8()">
+                }
+                @if (item.BottomsID.Equals(8))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick9()">
+                }
+
+                 
+            </div>
+        </div>
+        }   
+}
+
+<div class="row container" id="navigatepart">
+    <div class="col-md-3" id="navpartbtn1">
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Tops")'>Add Top</a>
+    </div>
+    <div class="col-md-3" id="navpartbtn2" >
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Accessories")'>Add A Accessories</a>
+    </div>
+    <div class="col-md-3" id="navpartbtn3">
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Shoes")'>Add A Shoes</a>
+    </div>
+    <div class="col-md-3"id="navpartbtn4" >
+        <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Bottoms")'>Add Bottoms</a>
+    </div>
+
+</div>
