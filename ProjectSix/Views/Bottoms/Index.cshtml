@@ -3,61 +3,59 @@
 @{
     ViewBag.Title = "Index";
 }
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<div class="row container" id="titleoutfitpart">
+    <div class="col-md-12" id="titleoutfitcolumn">
+        <h2>Create, Delete, Edit  Items</h2>
+    </div>
+</div>
 
-<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occassion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BottomType.BottomTypeName)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occassion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BottomType.BottomTypeName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BottomsID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BottomsID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BottomsID })
-        </td>
-    </tr>
+@foreach (var item in Model)
+{
+<div class="row container" id="detailsrow">
+    <div class="col-md-6" id="detailsCol1">
+        <img src="@Html.DisplayFor(model => item.Photo)">
+    </div>
+    <div class="col-md-6" id="detailsCol2">
+        <div class="row container" id="detailscol2row1">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Name: </span>@Html.DisplayFor(model => item.Name)<span>.</span></h2> 
+            </div>
+        </div>
+        <div class="row container" id="detailscol2row2">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Color: </span> @Html.DisplayFor(model => item.Color)</h2>
+            </div>
+        </div>
+        <div class="row container" id="detailscol2row3">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Season: </span> <span>You can wear this item in </span>@Html.DisplayFor(model => item.Season)<span> seasons.</span></h2>
+            </div>
+        </div>
+        <div class="row container" id="detailscol2row4">
+            <div class="col-md-3" id="detailsCol2">
+                <h2><span> Item Occassion: </span> <span>You can wear this item in </span>@Html.DisplayFor(model => item.Occassion)<span> occassions.</span></h2>
+                <a font style="color:#000000" @Html.ActionLink("Edit", "Edit", new { id = item.BottomsID })></a>
+                <a font style="color:#000000" @Html.ActionLink("Details", "Details", new { id = item.BottomsID })></a>
+                <a font style="color:#000000" @Html.ActionLink("Delete", "Delete", new { id = item.BottomsID })></a>
+            </div>
+        </div>
+    </div>
+</div>
 }
-
-</table>
+<div class="row container" id="navigatedetails1">
+    <div class="col-md-6" id="navdetbtn1">
+        <a class="btn btn-default" id="navdetbtn1" onclick="goBack()">Return To Outfits</a>
+    </div>
+    <div class="col-md-6" id="navdettbtn">
+        <a class="btn btn-default" id="navdetbtn2" @Html.ActionLink("Create New", "Create")></a>
+    </div>
+</div>

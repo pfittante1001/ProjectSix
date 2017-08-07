@@ -1,4 +1,9 @@
 ﻿@model IEnumerable<ProjectSix.Models.Outfit>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 
 <div class="row container" id="titleoutfitpart">
     <div class="col-md-12" id="titleoutfitcolumn">
@@ -15,13 +20,13 @@
     <script>
         function OnClick2() {
 
-            window.location.href = "@Url.Action("Details", "Tops", new { id = 21 })";
+            window.location.href = "@Url.Action("Details", "Tops", new { id = 17 })";
         };
     </script>
     <script>
         function OnClick3() {
 
-            window.location.href = "@Url.Action("Details", "Accessories", new { id = 6 })";
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 7 })";
         };
     </script>
     <script>
@@ -48,6 +53,48 @@
             window.location.href = "@Url.Action("Details", "Bottoms", new { id = 7 })";
         };
     </script>
+    <script>
+        function OnClick8() {
+
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 8 })";
+        };
+    </script>
+    <script>
+        function OnClick9() {
+
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 6 })";
+        };
+    </script>
+    <script>
+        function OnClick10() {
+
+            window.location.href = "@Url.Action("Details", "Bottoms", new { id = 8 })";
+        };
+    </script>
+    <script>
+        function OnClick12() {
+
+            window.location.href = "@Url.Action("Details", "Tops", new { id = 23 })";
+        };
+    </script>
+    <script>
+        function OnClick13() {
+
+            window.location.href = "@Url.Action("Details", "Tops", new { id = 22 })";
+        };
+    </script>
+    <script>
+        function OnClick14() {
+
+            window.location.href = "@Url.Action("Details", "Tops", new { id = 19 })";
+        };
+    </script>
+    <script>
+        function OnClick15() {
+
+            window.location.href = "@Url.Action("Details", "Tops", new { id = 21 })";
+        };
+    </script>
     
 </head>
 @foreach (var item in Model)
@@ -61,17 +108,41 @@
                 {
                     <input type="button" value="View Item Details" onclick="OnClick1()">
                 }
-                else
+                @if (item.TopsID.Equals(17))
                 {
                     <input type="button" value="View Item Details" onclick="OnClick2()">
+                }
+                @if (item.TopsID.Equals(23))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick12()">
+                }
+                @if (item.TopsID.Equals(22))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick13()">
+                }
+                @if (item.TopsID.Equals(19))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick14()">
+                }
+                @if (item.TopsID.Equals(21))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick15()">
                 }
 
             </div>
             <div class="col-md-3" id="oufitcolumn">
                 <img src="@Html.DisplayFor(modelItem => item.Accessory.Photo)">
-                @if (item.AccessorysID.Equals(6))
+                @if (item.AccessorysID.Equals(7))
                 {
                     <input type="button" value="View Item Details" onclick="OnClick3()">
+                }
+                @if (item.AccessorysID.Equals(8))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick8()">
+                }
+                @if (item.AccessorysID.Equals(6))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick9()">
                 }
             </div>
             <div class="col-md-3" id="oufitcolumn">
@@ -92,16 +163,20 @@
                 {
                     <input type="button" value="View Item Details" onclick="OnClick6()">
                 }
-                 else 
+                @if (item.BottomsID.Equals(7))
                 {
                     <input type="button" value="View Item Details" onclick="OnClick7()">
+
+                }
+                @if (item.BottomsID.Equals(8))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick10()">
 
                 }
             </div>
         </div>
         }   
 }
-
 
 <div class="row container" id="navigatepart">
     <div class="col-md-3" id="navpartbtn1">
@@ -116,5 +191,14 @@
     <div class="col-md-3" id="navpartbtn4">
         <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Bottoms")'>Add Bottoms</a>
     </div>
-
+</div>
+<div class="row container" id="backonepage">
+    <div class="col-md-12" id="backonepage1">
+        <a class="btn btn-default" id="backonepagebtn" onclick="goBack()">Back To Oufits Main</a>
+    </div>
+</div>
+<div class="row container" id="backonepage2">
+    <div class="col-md-12" id="backonepage2">
+        <h1><font color="#ffffff" size="+3"><marquee behavior="alternate">Your life will only get more intense when you dress like me!!</marquee></font></h1>
+    </div>
 </div>

@@ -15,6 +15,11 @@ div#navigatedetails.row.container{
     font-family: 'Permanent Marker', cursive;
 
 }
+div#navigatedetails1.row.container{
+    margin-top:10px;
+    font-family: 'Permanent Marker', cursive;
+
+}
 input{
     
     padding-left: 10px;
@@ -115,6 +120,10 @@ div#navdetbtn.col-md-6{
     padding-left:0px;
     padding-right:0px;
 }
+div#navdetbtn1.col-md-6{
+    margin-left:400px;
+    width:150px;
+}
 a#return.btn.btn-default{
     font-family: 'Permanent Marker', cursive;
     margin-left: 500px;
@@ -155,10 +164,36 @@ div#navpartbtn.col-md-3{
     height:35px;
 
 }
+div#backonepage1.col-md-12{
+    font-family: 'Permanent Marker', cursive;
+    width:175px;
+    height:35px;
+    margin-left:480px;
+
+}
+div#backonepage2.col-md-12{
+    font-family: 'Permanent Marker', cursive;
+    width:160px;
+    height:75px;
+    width:1120px;
+    
+    background-image: url('../images/flames.jpg');
+}
+div#backonepage.row.container{
+    margin-bottom:10px;
+    margin-top:15px;
+    color:#000000;
+}
+div#backonepage2.row.container{
+    margin-bottom:10px;
+    margin-top:15px;
+    color:#000000;
+    margin-left:25px;
+}
 
 div#navpartbtn1.col-md-3{
     font-family: 'Permanent Marker', cursive;
-   padding-left:75px;
+    padding-left:75px;
     height:35px;
 
 }
@@ -189,7 +224,8 @@ div#outfitswelcome.row.container {
     border-width: 3px;
     height: 96px;
     background-image: url('../images/flames.jpg');
-    margin-top:5px
+    margin-top:5px;
+    margin-left:10px;
     
 }
 div.navbar.navbar-inverse.navbar-fixed-bottom{

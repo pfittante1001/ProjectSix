@@ -9,7 +9,7 @@
     <script>
         function OnClick1() {
             
-              window.location.href = "@Url.Action("Details", "Tops", new { id = 21 })";
+              window.location.href = "@Url.Action("Details", "Tops", new { id = 19 })";
         };
     </script>
     <script>
@@ -21,7 +21,7 @@
     <script>
         function OnClick3() {
 
-            window.location.href = "@Url.Action("Details", "Accessories", new { id = 6 })";
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 8 })";
         };
     </script>
     <script>
@@ -45,7 +45,7 @@
     <script>
         function OnClick7() {
 
-            window.location.href = "@Url.Action("Details", "Bottoms", new { id = 7 })";
+            window.location.href = "@Url.Action("Details", "Accessories", new { id = 6 })";
         };
     </script>
     
@@ -57,18 +57,26 @@
         <div class="row container" id="outfitpart">
             <div class="col-md-3" id="oufitcolumn">              
                 <img src="@Html.DisplayFor(modelItem => item.Top.Photo)">  
-                @if (item.TopsID.Equals(21))
+                @if (item.TopsID.Equals(19))
                 {
                     <input type="button" value="View Item Details" onclick="OnClick1()">
+                }
+                @if (item.TopsID.Equals(21))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick2()">
                 }
                
 
             </div>
             <div class="col-md-3" id="oufitcolumn">
                 <img src="@Html.DisplayFor(modelItem => item.Accessory.Photo)">
-                @if (item.AccessorysID.Equals(6))
+                @if (item.AccessorysID.Equals(8))
                 {
                     <input type="button" value="View Item Details" onclick="OnClick3()">
+                }
+                @if (item.AccessorysID.Equals(6))
+                {
+                    <input type="button" value="View Item Details" onclick="OnClick7()">
                 }
             </div>
             <div class="col-md-3" id="oufitcolumn">
@@ -108,5 +116,14 @@
     <div class="col-md-3"id="navpartbtn4" >
         <a class="btn btn-default" id="navpartbtn" href='@Url.Action("Index", "Bottoms")'>Add Bottoms</a>
     </div>
-
+</div>
+<div class="row container" id="backonepage">
+    <div class="col-md-12" id="backonepage1">
+        <a class="btn btn-default" id="backonepagebtn" href='@Url.Action("Index", "Outfits")'>Back To Oufits Main</a>
+    </div>
+</div>
+<div class="row container" id="backonepage2">
+    <div class="col-md-12" id="backonepage2">
+        <h1><font color="#ffffff" size="+3"><marquee behavior="alternate">Your life will only get more intense when you dress like me!!</marquee></font></h1>
+    </div>
 </div>

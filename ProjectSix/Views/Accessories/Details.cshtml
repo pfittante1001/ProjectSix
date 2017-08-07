@@ -3,7 +3,11 @@
 @{
     ViewBag.Title = "Details";
 }
-
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 <div class="row container" id="titleoutfitpart">
     <div class="col-md-12" id="titleoutfitcolumn">
         <h2>Here are the details for the item you selected</h2>
@@ -42,7 +46,7 @@
         <a class="btn btn-default" target="_blank" id="navdettbtn" href=https://www.google.com/search?q =stafford+v+neck+t+shirts&source =lnms&tbm =shop&sa =X&ved =0ahUKEwjhjL6r5MLVAhVH5CYKHU-7Bd8Q_AUICigB&biw =1366&bih =638'>Buy Item Now!</a>
     </div>
     <div class="col-md-6" id="navdettbtn">
-        <a class="btn btn-default" id="navdetbtn" href='@Url.Action("HarleyBtsPart", "Outfits")'>Return To Outfits</a>
+        <a class="btn btn-default" id="navdetbtn" onclick="goBack()">Return To Outfits</a>
     </div>
 </div>
 
